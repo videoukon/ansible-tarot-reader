@@ -1,0 +1,6 @@
+---
+# tasks file for tarot-reading
+- name: use Jinja2 template to configure index.html
+  template:
+    src: ../html/index.html.j2
+    dest: "{{ _web_root }}/index.html"
